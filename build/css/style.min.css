@@ -1,3 +1,5 @@
+/*** Fonts ***/
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 *, *::before, *::after {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -5,7 +7,7 @@
 
 html {
   color: var(--c-text);
-  font-family: "Arial", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 16px;
   line-height: 1.5;
   font-weight: 400;
@@ -17,6 +19,7 @@ body {
   margin: 0;
   position: relative;
   overflow-x: hidden;
+  background-color: #fffefa;
 }
 
 .admin-bar header {
@@ -56,7 +59,7 @@ fieldset {
 }
 
 textarea, input, select {
-  font-family: "Arial", sans-serif;
+  font-family: "Montserrat", sans-serif;
   outline: none;
   -moz-appearance: none;
   -webkit-appearance: none;
@@ -226,7 +229,7 @@ section {
 .container {
   max-width: 1288px;
   width: 100%;
-  padding: 0 22px;
+  padding: 0 24px;
   margin: 0 auto;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -247,7 +250,7 @@ section {
 
 h1, h2, h3, h4, h5,
 .h1, .h2, .h3, .h4, .h5 {
-  font-family: "Arial", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 600;
   color: var(--c-text);
   margin: 0;
@@ -428,27 +431,101 @@ ul, ol {
   }
 }
 
-#shadow-host-companion {
+.btn--outline {
+  display: table-cell;
+  padding: 10px 20px;
+  min-width: 150px;
+  vertical-align: middle;
+  color: #1c2b4d;
+  font-size: 16px;
+  text-align: center;
+  line-height: 1.55;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  border-width: 3px;
+  border-radius: 33px;
+  background-position: center center;
+  border-color: #1c2b4d;
+  border-style: solid;
+  -webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+}
+.btn--outline:hover {
+  background-color: #f50041;
+  border-color: #fcfcf7;
+  color: #fcfcf7;
+}
+
+#header {
+  background-color: #fffefa;
+}
+#header .header__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px 40px;
+}
+#header .header__nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 32px;
+  list-style: none;
+  margin: 0;
   padding: 0;
 }
-
-[data-aos=fade-up] {
-  opacity: 0;
-  transition-property: opacity, -webkit-transform;
-  -webkit-transition-property: opacity, -webkit-transform;
-  transition-property: opacity, transform;
-  transition-property: opacity, transform, -webkit-transform;
-  -webkit-transition-timing-function: ease;
-          transition-timing-function: ease;
-  -webkit-transition-duration: 0.5s;
-          transition-duration: 0.5s;
-  -webkit-transform: translate3d(0, 80px, 0);
-          transform: translate3d(0, 80px, 0);
+#header .header__nav a {
+  color: #1c2b4d;
+  font-weight: 500;
+  text-decoration: none;
 }
-
-.aos-animate {
-  opacity: 1;
-  -webkit-transform: none !important;
-  -ms-transform: none !important;
-      transform: none !important;
+#header .header__nav a:hover {
+  color: #f50041;
 }
+#header .header__logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-width: 150px;
+}
+#header .header__logo .custom-logo-link {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+  width: 100%;
+}
+#header .header__logo .custom-logo-link img.custom-logo {
+  width: 100%;
+  height: auto;
+  width: auto;
+  display: block;
+}
+#header .header__logo .site-title {
+  font-size: 24px;
+  font-weight: 600;
+  color: #1c2b4d;
+  text-decoration: none;
+}
+#header .header__logo .site-title:hover {
+  color: #f50041;
+}
+@import "../fonts/fonts.css";

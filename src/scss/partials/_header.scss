@@ -1,0 +1,60 @@
+@use "variables" as *;
+
+#header {
+  background-color: $color-background;
+
+  .header__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+  }
+
+  .header__nav ul {
+    display: flex;
+    gap: 32px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .header__nav a {
+    color: $color-text;
+    font-weight: 500;
+    text-decoration: none;
+
+    &:hover {
+      color: $color-accent;
+    }
+  }
+
+  .header__logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 150px;
+    .custom-logo-link {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        width: 100%;
+        img.custom-logo {
+            width: 100%;
+            height: auto;
+            width: auto;
+            display: block;
+        }
+    }
+
+    .site-title {
+        font-size: 24px;
+        font-weight: 600;
+        color: $color-text;
+        text-decoration: none;
+            &:hover {
+                color: $color-accent;
+            }
+        }
+    }
+}

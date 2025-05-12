@@ -1,0 +1,77 @@
+.services-section {
+  padding: 40px 20px;
+  text-align: center;
+}
+.services-section__title {
+  font-size: 36px;
+  font-weight: 700;
+  color: #1c2b4d;
+  margin-bottom: 8px;
+  text-align: left;
+}
+.services-section__subtitle {
+  font-size: 16px;
+  color: #1c2b4d;
+  margin-bottom: 40px;
+  text-align: left;
+  font-weight: 500;
+}
+.services-section .services-cards {
+  display: -ms-grid;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 15px;
+  margin-bottom: 15px;
+}
+.services-section .service-card {
+  min-height: 280px;
+  border-radius: 10px;
+  padding: 32px 30px;
+  text-align: left;
+}
+.services-section .service-card__icon {
+  height: 65px;
+  margin-bottom: 20px;
+}
+.services-section .service-card__title {
+  font-weight: 700;
+  font-size: 22px;
+  margin-bottom: 18px;
+  text-align: left;
+  color: #fffefa;
+}
+.services-section .service-card__subtitle {
+  font-size: 14px;
+  opacity: 0.9;
+  text-align: left;
+  color: #fffefa;
+}
+.services-section .capabilities-cards {
+  display: -ms-grid;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 15px;
+}
+.services-section .capability-card {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 32px 30px;
+  background: #fffefa;
+  text-align: left;
+}
+.services-section .capability-card__icon {
+  height: 100px;
+  margin-bottom: 20px;
+}
+.services-section .capability-card__title {
+  font-weight: 700;
+  font-size: 22px;
+  margin-bottom: 18px;
+  color: #1c2b4d;
+}
+.services-section .capability-card__desc {
+  font-size: 14px;
+  font-weight: 500;
+  color: #1c2b4d;
+  opacity: 0.9;
+}

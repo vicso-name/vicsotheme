@@ -1,0 +1,21 @@
+.hero {
+  padding: 100px 20px;
+  text-align: center;
+  height: 600px;
+}
+.hero .hero__inner .hero__content__title {
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 1.1;
+  margin-bottom: 35px;
+  text-align: left;
+  color: #1c2b4d;
+}
+.hero .hero__inner .hero__content__description {
+  font-size: 18px;
+  max-width: 650px;
+  text-align: left;
+  color: #1c2b4d;
+  font-weight: 500;
+  margin-bottom: 35px;
+}

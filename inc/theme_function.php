@@ -215,3 +215,22 @@ add_filter( 'rank_math/frontend/breadcrumb/html', function( $html, $crumbs, $cla
 function is_blog () {
     return ( is_archive() || is_author() || is_category() || is_home() || is_tag()) && 'post' == get_post_type();
 }
+
+function register_case_tag_taxonomy() {
+  register_taxonomy('case_tag', ['case'], [
+    'label'             => 'Case Tags',
+    'public'            => true,
+    'hierarchical'      => true,
+    'show_admin_column' => true,
+    'rewrite'           => ['slug' => 'case-tag'],
+    'show_in_rest'      => true,
+    'labels'            => [
+      'name'          => 'Case Tags',
+      'singular_name'=> 'Case Tag',
+      'add_new_item' => 'Add New Tag',
+      'edit_item'    => 'Edit Tag',
+      'search_items' => 'Search Tags',
+    ],
+  ]);
+}
+add_action('init', 'register_case_tag_taxonomy');

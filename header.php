@@ -12,5 +12,40 @@
 <body <?php body_class(); ?> >
     <div id="wrapper">
         <header id="header">
-            <h1>Here will be amazing header</h1>
+            <div class="container header__inner">
+
+                <nav class="header__nav header__nav--left">
+                    <nav class="main-nav">
+                        <?php
+                            wp_nav_menu([
+                            'theme_location' => 'menu-1',
+                            'menu_class'     => 'main-menu',
+                            'container'      => false,
+                            'fallback_cb'    => false,
+                            ]);
+                        ?>
+                    </nav>
+                </nav>
+
+               <div class="header__logo">
+                    <?php
+                        $custom_logo_id = get_theme_mod('custom_logo');
+
+                        if ($custom_logo_id) {
+                            $logo_url = wp_get_attachment_image_url($custom_logo_id, 'full');
+                            echo '<a href="' . esc_url(home_url('/')) . '" class="custom-logo-link" rel="home">';
+                            echo '<img src="' . esc_url($logo_url) . '" alt="' . get_bloginfo('name') . '" class="svg replaced-svg">';
+                            echo '</a>';
+                        } else {
+                            echo '<a href="' . esc_url(home_url('/')) . '" class="site-title">' . get_bloginfo('name') . '</a>';
+                        }
+                    ?>
+                </div>
+
+                <div class="header__right">
+                    <a href="#contact" class="btn btn--outline">Contact</a>
+                </div>
+
+            </div>
+        </header>
             <main>
