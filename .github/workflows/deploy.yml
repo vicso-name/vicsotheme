@@ -18,6 +18,11 @@ jobs:
         with:
           ssh-private-key: ${{ secrets.DEPLOY_KEY }}
 
+      - name: Add server to known_hosts
+        run: |
+          mkdir -p ~/.ssh
+          echo "vicsotheme.com ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIFSSGaxVdVNP3rlEPM7xnWJWPeOj3erH74asbfzVusIz" >> ~/.ssh/known_hosts
+
       - name: Deploy via rsync
         run: |
           rsync -avz --delete \
