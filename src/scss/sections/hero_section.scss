@@ -1,7 +1,8 @@
 .hero {
-  padding: 100px 20px;
-  text-align: center;
+  padding: 100px 0;
   height: 600px;
+  display: flex;
+  align-items: center;
   .hero__inner{
     .hero__content{
          &__title {

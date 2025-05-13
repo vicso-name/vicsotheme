@@ -1,5 +1,5 @@
 .services-section {
-  padding: 40px 20px;
+  padding: 40px 0;
   text-align: center;
 }
 .services-section__title {
@@ -19,9 +19,10 @@
 .services-section .services-cards {
   display: -ms-grid;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  -ms-grid-columns: (minmax(220px, 1fr))[2];
+  grid-template-columns: repeat(2, minmax(220px, 1fr));
   gap: 15px;
-  margin-bottom: 15px;
+  margin-bottom: 35px;
 }
 .services-section .service-card {
   min-height: 280px;
@@ -35,13 +36,13 @@
 }
 .services-section .service-card__title {
   font-weight: 700;
-  font-size: 22px;
-  margin-bottom: 18px;
+  font-size: 35px;
+  margin-bottom: 20px;
   text-align: left;
   color: #fffefa;
 }
 .services-section .service-card__subtitle {
-  font-size: 14px;
+  font-size: 18px;
   opacity: 0.9;
   text-align: left;
   color: #fffefa;

@@ -1,7 +1,7 @@
 @use '../partials/variables' as *;
 
 .cases-section {
-  padding: 40px 20px;
+  padding: 40px 0;
 
   &__title {
     font-size: 36px;
@@ -21,7 +21,11 @@
     border-radius: 10px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
     padding: 30px;
-
+    
+    &:last-child {
+      margin-bottom: 0;
+    }
+    
     &--reverse {
       flex-direction: row-reverse;
     }
@@ -62,6 +66,18 @@
       color: $color-text;
       line-height: 1.6;
       margin-bottom: 5px;
+    }
+
+    &__link {
+      &-btn{
+        color: $color-text;
+        font-size: 18px;
+        font-weight: 700;
+        transition: color 0.3s ease;
+        &:hover {
+          color: $color-accent;
+        }
+      }
     }
 
     &__tags {

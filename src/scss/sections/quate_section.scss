@@ -1,0 +1,61 @@
+@use '../partials/variables' as *;
+
+.quate-section {
+  padding: 40px 0;
+
+  .quate-box {
+    align-items: stretch;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    background: $color-text;
+    border-radius: 32px;
+    padding: 60px 80px;
+    color: #fff;
+    gap: 80px;
+
+    &__text {
+      flex: 1;
+      min-width: 300px;
+
+      .quate-box__title {
+        font-size: 90px;
+        font-weight: 700;
+        color: $white;
+        letter-spacing: 0.72px;
+        margin-bottom: 20px;
+      }
+
+      .quate-box__subtitle {
+        font-size: 24px;
+        font-weight: 300;
+        line-height: 1.4;
+        color: $white;
+        opacity: 0.5;
+        margin-bottom: 20px;
+      }
+    }
+
+    &__description {
+        min-height: 220px;
+        display: flex;
+        align-items: flex-end;
+        position: relative;
+        color: $white;
+        font-size: 22px;
+        font-weight: 500;
+        line-height: 1.4;
+      &::before {
+        content: "";
+        background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg xmlns='http://www.w3.org/2000/svg' width='94' height='78' viewBox='0 0 94 78' fill='none'%3E%3Cpath d='M28.75 38.75C32.4167 40.25 35.25 42.6667 37.25 46C39.4167 49.1667 40.5 53 40.5 57.5C40.5 63.5 38.5833 68.4167 34.75 72.25C30.9167 76.0833 26.1667 78 20.5 78C14.5 78 9.58333 76.0833 5.75 72.25C1.91667 68.4167 7.07805e-07 63.5 7.07805e-07 57.5C7.07805e-07 54.5 0.333334 51.5833 1 48.75C1.83333 45.9167 3.33333 41.6667 5.5 36L18.75 0.499989L38.75 0.499989L28.75 38.75ZM81.75 38.75C85.4167 40.25 88.25 42.6667 90.25 46C92.4167 49.1667 93.5 53 93.5 57.5C93.5 63.5 91.5833 68.4167 87.75 72.25C83.9167 76.0833 79.1667 78 73.5 78C67.5 78 62.5833 76.0833 58.75 72.25C54.9167 68.4167 53 63.5 53 57.5C53 54.5 53.3333 51.5833 54 48.75C54.8333 45.9167 56.3333 41.6667 58.5 36L71.75 0.499989H91.75L81.75 38.75Z' fill='%23515D77'%3E%3C/path%3E%3C/svg%3E ");
+        width: 75px;
+        height: 60px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        position: absolute;
+        left: 0;
+        top: 0;
+      }
+    }
+  }
+}

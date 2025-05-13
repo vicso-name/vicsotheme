@@ -1,5 +1,5 @@
 .cases-section {
-  padding: 40px 20px;
+  padding: 40px 0;
 }
 .cases-section__title {
   font-size: 36px;
@@ -25,6 +25,9 @@
   -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
           box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
   padding: 30px;
+}
+.cases-section .case-item:last-child {
+  margin-bottom: 0;
 }
 .cases-section .case-item--reverse {
   -webkit-box-orient: horizontal;
@@ -78,6 +81,16 @@
   color: #1c2b4d;
   line-height: 1.6;
   margin-bottom: 5px;
+}
+.cases-section .case-item__link-btn {
+  color: #1c2b4d;
+  font-size: 18px;
+  font-weight: 700;
+  -webkit-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+}
+.cases-section .case-item__link-btn:hover {
+  color: #f50041;
 }
 .cases-section .case-item__tags {
   display: -webkit-box;

@@ -37,7 +37,7 @@
               <?php endif; ?>
 
               <div class="case-item__link">
-                <a href="<?php echo esc_url($link); ?>" class="btn btn--outline">View Case Study</a>
+                <a href="<?php echo esc_url($link); ?>" class="case-item__link-btn">View Case Study</a>
               </div>
             </div>
           </div>

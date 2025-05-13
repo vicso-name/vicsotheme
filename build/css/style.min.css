@@ -227,16 +227,17 @@ section {
 }
 
 .container {
-  max-width: 1288px;
+  max-width: 1400px;
   width: 100%;
   padding: 0 24px;
   margin: 0 auto;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 1600px) {
   .container {
     padding: 0 16px;
+    max-width: 1280px;
   }
 }
 
@@ -443,8 +444,9 @@ ul, ol {
   font-weight: 700;
   letter-spacing: 0.5px;
   border-width: 3px;
-  border-radius: 33px;
+  border-radius: 10px;
   background-position: center center;
+  background: transparent;
   border-color: #1c2b4d;
   border-style: solid;
   -webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
@@ -511,7 +513,7 @@ ul, ol {
       -ms-flex-align: center;
           align-items: center;
   text-decoration: none;
-  width: 100%;
+  width: 155px;
 }
 #header .header__logo .custom-logo-link img.custom-logo {
   width: 100%;
