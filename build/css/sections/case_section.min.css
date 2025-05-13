@@ -2,7 +2,7 @@
   padding: 40px 0;
 }
 .cases-section__title {
-  font-size: 36px;
+  font-size: 45px;
   font-weight: 700;
   color: #1c2b4d;
   margin-bottom: 60px;
@@ -70,7 +70,7 @@
   max-width: 460px;
 }
 .cases-section .case-item__title {
-  font-size: 24px;
+  font-size: 40px;
   font-weight: 700;
   color: #1c2b4d;
   margin: 0;

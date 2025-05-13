@@ -15,6 +15,8 @@
           justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  padding-bottom: 80px;
 }
 .contact-section .contact-box__left {
   -webkit-box-flex: 1.5;
@@ -44,15 +46,16 @@
      object-fit: cover;
 }
 .contact-section .contact-box__left .contact-box__desc {
-  font-size: 14px;
+  font-size: 16px;
   color: #1c2b4d;
   line-height: 1.4;
   font-weight: 500;
 }
 .contact-section .contact-box__left .contact-box__position {
   font-weight: 700;
+  font-size: 18px;
   color: #1c2b4d;
-  margin-top: 5px;
+  margin-top: 8px;
 }
 .contact-section .contact-box__right {
   -webkit-box-flex: 2;
@@ -61,7 +64,7 @@
   min-width: 320px;
 }
 .contact-section .contact-box__right .contact-box__title {
-  font-size: 36px;
+  font-size: 45px;
   font-weight: 700;
   color: #1c2b4d;
   margin-bottom: 8px;

@@ -5,7 +5,7 @@
   text-align: center;
 
   &__title {
-    font-size: 36px;
+    font-size: 45px;
     font-weight: 700;
     color: $color-text;
     margin-bottom: 8px;
@@ -23,7 +23,7 @@
   .services-cards {
     display: grid;
     grid-template-columns: repeat(2, minmax(220px, 1fr));
-    gap: 15px;
+    gap: 35px;
     margin-bottom: 35px;
   }
 
@@ -57,7 +57,7 @@
   .capabilities-cards {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 15px;
+    gap: 35px;
   }
 
   .capability-card {

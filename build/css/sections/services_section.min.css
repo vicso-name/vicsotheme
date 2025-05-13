@@ -3,7 +3,7 @@
   text-align: center;
 }
 .services-section__title {
-  font-size: 36px;
+  font-size: 45px;
   font-weight: 700;
   color: #1c2b4d;
   margin-bottom: 8px;
@@ -21,7 +21,7 @@
   display: grid;
   -ms-grid-columns: (minmax(220px, 1fr))[2];
   grid-template-columns: repeat(2, minmax(220px, 1fr));
-  gap: 15px;
+  gap: 35px;
   margin-bottom: 35px;
 }
 .services-section .service-card {
@@ -51,7 +51,7 @@
   display: -ms-grid;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 15px;
+  gap: 35px;
 }
 .services-section .capability-card {
   border: 1px solid #ccc;

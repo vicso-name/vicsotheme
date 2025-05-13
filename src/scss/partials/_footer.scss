@@ -1,0 +1,94 @@
+@use '../partials/variables' as *;
+
+.footer{
+    .footer-content{
+        padding-top: 80px;
+        &__description{
+            font-size: 14px;
+            font-weight: 500;
+            color: $light-text;
+            margin-bottom: 8px;
+            text-align: left;
+            margin-bottom: 35px;
+        }
+    }
+    .footer-content__wrapper{
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 80px;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+        .footer-contact{
+            .footer-logo{
+                max-width: 320px;
+                display: block;
+                svg{
+                    width: 100%;
+                    height: auto;
+                }
+            }
+            .footer_social_items{
+                display: flex;
+                gap: 20px;
+                padding: 0;
+                margin-top: 25px;
+                margin-bottom: 25px;
+                list-style-type: none;
+                a{
+                    svg{
+                        width: 20px;
+                        height: 20px;
+                        transition: all 0.3s ease-in-out;
+                        &:hover{
+                            transform: scale(1.2);
+                        }
+                    }
+                }
+            }
+            .footer__mail{
+                font-size: 18px;
+                color: $color-text;
+                font-weight: 500;
+                transition: color 0.3s ease-in-out;
+                text-decoration: none;
+                &:hover{
+                    color: $color-accent;
+                }
+            }
+        }
+        .footer-columns {
+            display: flex;
+            gap: 80px;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            align-items: flex-start;
+            .footer-column {
+                min-width: 150px;
+                h4 {
+                    text-transform: uppercase;
+                    font-size: 16px;
+                    font-weight: 700;
+                    color: $color-text;
+                    margin-bottom: 15px;
+                }
+                ul {
+                    list-style: none;
+                    padding: 0;
+                    margin: 0;
+                    li {
+                        margin-bottom: 10px;
+
+                        a {
+                            font-size: 14px;
+                            color: $light-text;
+                            text-decoration: none;
+                            transition: color 0.3s ease-in-out;
+                            &:hover {
+                                color: $color-accent;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
